@@ -1,3 +1,14 @@
+//These are arithmetic operators
++ addition
+- subtraction
+* multiplication
+/ division
+% modulus
+++ increment
+--  decrement
+
+
+---
 #include <iostream>
 
 using namespace std;
@@ -20,5 +31,17 @@ int main () {
 	string hellowhat = hello + what; //we should always declare the data type when initialize.
 	cout << hellowhat;
 	
+	return 0;
+}
+
+---
+//increment
+#include <iostream>
+
+using namespace std;
+int main () {
+	int a = 1;
+	++a;
+	cout << a;
 	return 0;
 }
