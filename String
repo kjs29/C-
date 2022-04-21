@@ -1,0 +1,9 @@
+//string is used to store strings surrounded by double quotes.
+#include <iostream>
+
+using namespace std;
+int main () {
+  string helloWorld = "Hello World!";
+  cout << helloWorld;
+  return 0;
+}
