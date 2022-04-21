@@ -32,13 +32,16 @@ Syntax : type variableName = value;
 ---
 //Declaring without assigning value is possible.
 
+
 #include <iostream>
 
 using namespace std;
 
 int main () {
-	int age = 29;
-	cout << age;
+	int age;				//right here
+	cout<< "Enter your age: "; 
+	cin >> age;				
+	cout<< "Your age is " << age;
 	return 0;
 }
 
