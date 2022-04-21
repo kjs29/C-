@@ -1,8 +1,18 @@
 #include<iostream>
 
-using namespace std;
+using namespace std;//means that  we can use names for objects and variables from standard library
 
 int main () {
-	cout << "Hello World";
+	cout << "Hello World!"; //cout is pronounced as 'see-out', used together with insertion operator << to output/print text.
+	return 0; //return 0; ends the main function.
+}
+
+
+---
+//The code above can be written like this.
+
+#include <iostream>
+int main() {
+	std::cout << "Hello World!"; //instead of 'using namespace std' we can also use std followed by :: operator
 	return 0;
 }
