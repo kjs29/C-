@@ -1,12 +1,13 @@
 //These are arithmetic operators
+/*
 + addition
 - subtraction
 * multiplication
 / division
-% modulus
+% modulus		//gets the remainder
 ++ increment
---  decrement
-
+-- decrement
+*/
 
 ---
 #include <iostream>
