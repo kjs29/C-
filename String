@@ -7,3 +7,61 @@ int main () {
   cout << helloWorld;
   return 0;
 }
+
+
+----
+//String Concatenation
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	string firstName = "John";
+	string lastName = "Doe";
+	string fullName = firstName + "\n" +  lastName;
+	cout << fullName;
+	return 0;
+	
+}
+---
+//append function can be used since strings in C++ are objects.
+
+#include <iostream>
+
+using namespace std;
+int main () {
+	
+	string hello = "hello";
+	string greet = "Sir";
+	string ab = hello.append(greet);
+	cout << ab;
+	
+	return 0;
+}
+
+---
+//To get the length of a string , we can use either stringName.length() or stringName.size().
+#include <iostream>
+
+using namespace std;
+int main () {
+	string a = "asda kasd ksdn kanksdnakn a";
+	string b = "ufww0e f9 w9wu f0w9u uwf w9euf w9ef";
+	cout << a.length() << "\n" << b.size() << "\n";
+	cout << a.size() << ", " << b.length();
+	return 0;
+}
+
+---
+//access strings
+#include <iostream>
+
+using namespace std;
+int main () {
+	string a = "hello my name is Hellokitty";
+	a[4] = 'A';
+	cout << a;
+	
+	return 0;
+	
+}
