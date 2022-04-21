@@ -19,3 +19,21 @@ int main () {
 	cout << "10!=20 : "<< (10!=20)<< "\n"; //1
 	return 0;
 }
+
+
+---example
+#include <iostream>
+
+using namespace std;
+int main () {
+	int number;
+	cout << "enter a number: ";
+	cin >> number;
+	//cout << (number >= 10 && number <= 20) << "\n";
+	if (number >= 10 && number <= 20) {
+		cout << "This is true";
+	} else {
+		cout << "This is not in the range of 10~20";
+	}
+	return 0;
+}
