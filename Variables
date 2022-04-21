@@ -1,10 +1,30 @@
 Variables are containers for storing data values.
 In C++ there are different types of variables.
+
 int - integers(whole numbers) ex) 123,-123
-double - floating point numbers with decimals ex)12.123,-123.123
+size : 2 or 4 bytes
+
+
+float : floating point numbers with decimals (7 decimal digits) ex.
+size : 4 bytes
+
+
+double - floating point numbers with decimals(15 decimal digits) ex)12e4
+size : 8 byte
+
+
 char - single characters surrounded by single quote ex) 'b' or 'B'
+size : 1 bytes
+
+
 string - text surrounded by double quotes. ex)"Hello World"
+size : unknown
+
+
 bool - boolean ex) true or false
+size : 1 byte.
+
+
 
 Declaring(creating) Variables
 Syntax : type variableName = value;
