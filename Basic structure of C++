@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+int main () {
+    std::string a = "\n";
+    std::cout<<"Hello"<<a<<a;
+    return 0;
+}
+
+
+---
+//#include : includes header file.
+#include <iostream>
+
+//Order : compile -> build -> execute
+
+//compile : translate. From C++ language to assembly language.
+
+
+int main () {         //C++ starts with main() function. We must have main function.
+	std::string a = "\n";
+	std::cout << "Hello" << a<<a;
+	return 0;
+}
