@@ -1,0 +1,17 @@
+/*
+Convert binary to hex numerical system
+
+Question what is 1010111(2) in hex number?
+1.
+101 0111 //we read as a group of 4digit
+
+2.
+0101 0111
+8421 8421
+
+3.
+5    7 = 57(16)
+
+1010111(2) = 57(16)
+
+*/
