@@ -11,7 +11,7 @@ int main () {
 	const int iMp = 0x00000008; // 8 or 1000(2)
 	const int iCritical = 0x00000010; // 16 or 10000(2)
 	
-	int iBuf = iAttack | iHp | iCritical;
+	int iBuf = iAttack | iHp | iCritical; //we give a buf to a character that enhances attack,hp,and critical.
 	/*iCritical|iHp
 			00100(2)
 			10000(2)
@@ -38,8 +38,17 @@ int main () {
 	cout << "HP : " << (iBuf&iHp)<<"\n";
 	cout << "MP : " << (iBuf&iMp)<<"\n";
 	cout << "Critical : " << (iBuf&iCritical)<<"\n";
-			
 	
+	if ((iBuf&iAttack)!=0) 
+		cout << "We have Attack"<<"\n";
+	if ((iBuf&iArmor)!=0) 
+		cout << "We have Armor"<<"\n";
+	if ((iBuf&iHp)!=0) 
+		cout << "We have Hp"<<"\n";
+	if ((iBuf&iMp)!=0) 
+		cout << "We have Mp"<<"\n";
+	if ((iBuf&iCritical)!=0) 
+		cout << "We have Critical"<<"\n";
 	
 	return 0;
 }
