@@ -1,4 +1,4 @@
-//user output(print)
+//simple user output(print)
 
 #include <iostream>
 
@@ -10,7 +10,7 @@ int main() {
 }
 
 ---
-//user output
+//simple user output
 
 #include <iostream>
 
@@ -52,4 +52,21 @@ int main () {
   sum = firstNum + secondNum;         //In this case , we made another variable 'sum' that is the sum of firstNum and secondNum.
   cout << "Your result is " << sum;
   return 0;
+}
+
+---
+//to use user input for strings
+//we don't use cin because the compiler terminates the program when there's a whitespace, cin only displays the first word.
+
+#include <iostream>
+
+using namespace std;
+int main () {
+	
+	string name;
+	cout << "What is your name ?";
+	getline(cin, name);
+	cout << "Your name is: " << name;
+	return 0;
+	
 }
