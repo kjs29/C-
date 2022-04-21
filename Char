@@ -1,4 +1,4 @@
-//char is used to store a single character. or numbers.
+//char is used to store a single character surrounded by a single quote. or numbers.
 #include <iostream>
 
 using namespace std;
