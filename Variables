@@ -1,0 +1,33 @@
+Variables are containers for storing data values.
+In C++ there are different types of variables.
+int - integers(whole numbers) ex) 123,-123
+double - floating point numbers with decimals ex)12.123,-123.123
+char - single characters surrounded by single quote ex) 'b' or 'B'
+string - text surrounded by double quotes. ex)"Hello World"
+bool - boolean ex) true or false
+
+Declaring(creating) Variables
+Syntax : type variableName = value;
+
+---
+//Declaring without assigning value is possible.
+
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	int age = 29;
+	cout << age;
+	return 0;
+}
+
+---
+//Display Variables
+#include <iostream>
+using namespace std;
+int main () {
+  int age = 29;
+  cout << "My age is " <<age<< ". Am I late for this?";
+  return 0;
+}
