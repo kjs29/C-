@@ -10,11 +10,11 @@ size : 4 bytes
 
 
 double - floating point numbers with decimals(15 decimal digits) ex)12e4
-size : 8 byte
+size : 8 bytes
 
 
 char - single characters surrounded by single quote ex) 'b' or 'B'
-size : 1 bytes
+size : 1 byte
 
 
 string - text surrounded by double quotes. ex)"Hello World"
@@ -22,7 +22,7 @@ size : unknown
 
 
 bool - boolean ex) true or false
-size : 1 byte.
+size : 1 byte
 
 
 
