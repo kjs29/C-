@@ -1,0 +1,45 @@
+//비트단위 연산자를 사용하는 이유: 컴퓨터는 2진수 계산에 특화되어 있기 때문에 속도가 더 빠르다.
+
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	const int iAttack = 0x00000001; //1 or 1(2)
+	const int iArmor =  0x00000002; //2 or 10(2) 
+	const int iHp = 0x00000004; // 4 or 100(2)
+	const int iMp = 0x00000008; // 8 or 1000(2)
+	const int iCritical = 0x00000010; // 16 or 10000(2)
+	
+	int iBuf = iAttack | iHp | iCritical;
+	/*iCritical|iHp
+			00100(2)
+			10000(2)
+	answer1	10100(2)*/
+		
+	/*answer|iAttack
+			10100(2)
+			00001(2)
+	answer2	10101(2)*/
+	
+	cout << "Attack : "<<(iBuf&iAttack)<<"\n"; //To check if iBuf has iAttack or not
+	/*iBuf&iAttack
+			10101(2)
+			00001(2)
+	answer3	00001(2)*/						//The answer3 is 1(2) so yes, they have iAttack.
+	
+	
+	cout << "Armor : "<<(iBuf&iArmor)<<"\n";
+	/*iBuf&iArmor
+			10101(2)
+			00010(2)
+	answer4 00000(2)*/						//The answer4 is 0(2) so no, they don't have iArmor.
+	
+	cout << "HP : " << (iBuf&iHp)<<"\n";
+	cout << "MP : " << (iBuf&iMp)<<"\n";
+	cout << "Critical : " << (iBuf&iCritical)<<"\n";
+			
+	
+	
+	return 0;
+}
