@@ -1,0 +1,25 @@
+/*10101 ^ 00100 = 01110
+
+XOR produces 1 when they are not matched.
+
+a b XOR
+0 0 0
+0 1 1
+1 0 1
+1 1 0
+*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	
+	
+	cout << (25^8);
+	return 0;
+}
+
+---
+
