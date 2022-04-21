@@ -37,3 +37,34 @@ int main () {
 	
 	return 0;
 }
+
+
+
+---
+//The following two examples are identical
+
+#include <iostream>
+
+using namespace std;
+int main () {
+	int time = 20;
+	if (time <20) 
+		cout << "Good day!";
+	else {
+		cout << "Good evening!";
+	}
+	return 0;
+}
+
+---
+//If .. else can be written as shorthand If else.
+
+#include <iostream>
+using namespace std;
+
+int main () {
+	int time = 20;
+	string result = (time <20)? "Good day!" : "Good evening!";
+	cout <<result;
+	return 0;
+}
