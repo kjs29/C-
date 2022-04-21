@@ -1,0 +1,13 @@
+//When we don't want to override existing variable values we use const keyword in front. This means unchangeable and read only.
+
+
+#include <iostream>
+
+using namespace std;
+int main () {
+	const int age = 29;
+	const string helloworld = "Hello World";
+	age = 21; //[Error] assignment of read-only variable 'age'
+	cout << age << helloworld;
+	return 0;
+}
