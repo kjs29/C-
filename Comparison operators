@@ -4,3 +4,18 @@
 >= Greater or equal
 < Smaller than
 <= Smaller or equal
+
+---
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	cout << "10<20 : " << (10<20) << "\n"; //1
+	cout << "10<=20 : " << (10<=20)<< "\n"; //1
+	cout << "10>20 : " << (10>20)<< "\n"; //0
+	cout << "10>=20 : " << (10>=20)<< "\n"; //0
+	cout << "10==20 : " << (10==20)<< "\n"; //0
+	cout << "10!=20 : "<< (10!=20)<< "\n"; //1
+	return 0;
+}
