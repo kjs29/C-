@@ -1,0 +1,55 @@
+//user output(print)
+
+#include <iostream>
+
+using namespace std;
+int main() {
+  int age = 29;
+  cout << age;
+  return 0;
+}
+
+---
+//user output
+
+#include <iostream>
+
+using namespace std;
+int main () {
+	int age;
+	cout << "Enter your age : ";
+	cin >> age; //pronounced as see-in
+	cout << "Your age is " << age;
+	return 0;
+}
+
+---
+//Creating a simple calculator that gets the sum of two input numbers
+#include <iostream>
+using namespace std;
+int main () {
+  int firstNum;
+  int secondNum;
+  cout << "Print out the first number : ";
+  cin >> firstNum\n;
+  cout << "Print out the second number : ";
+  cin >> secondNum\n;
+  cout << "Your result is " << firstNum + secondNum;
+  return 0;
+}
+
+---
+//Creating a simple calculator that gets the sum of two input numbers
+#include <iostream>
+using namespace std;
+int main () {
+  int firstNum;
+  int secondNum;
+  cout << "Print out the first number : ";
+  cin >> firstNum;
+  cout << "Print out the second number : ";
+  cin >> secondNum;
+  sum = firstNum + secondNum;         //In this case , we made another variable 'sum' that is the sum of firstNum and secondNum.
+  cout << "Your result is " << sum;
+  return 0;
+}
