@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+int main () {
+	int age = 29;
+	int weight = 70;
+	string hello = "hello";
+	cout << age + weight;
+	
+	return 0;
+}
+
+---
+#include <iostream>
+
+using namespace std;
+int main () {
+	string hello = "hello";
+	string what = "what";
+	string hellowhat = hello + what; //we should always declare the data type when initialize.
+	cout << hellowhat;
+	
+	return 0;
+}
