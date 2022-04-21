@@ -31,3 +31,14 @@ int main () {
   cout << "My age is " <<age<< ". Am I late for this?";
   return 0;
 }
+---
+//We should use descriptive identifiers for variables.
+//Since programmers work together
+
+/*
+Good example.
+int userAge;
+
+Bad example
+int a; //we have no idea what an 'a' means.
+*/
