@@ -1,0 +1,28 @@
+AND(&),OR(|),NOT(~),XOR(^)
+
+
+87 & 53 =
+
+87 : 1010111
+53 : 110101
+
+
+//we have to make sure that they are the same digits
+ 1010111(2)
+&0110101(2)            //we put 0 in front
+ 0010101(2)
+if we convert 0010101(2) in decimal numbers = 21
+
+
+---To verify
+#include <iostream>
+
+using namespace std;
+int main () {
+	
+	cout << "(87&53) : " << (87&53);
+	return 0;
+}
+
+result : 
+(87&53) : 21
