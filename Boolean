@@ -7,3 +7,18 @@ int main () {
 	cout << isFalse;
 	return 0;
 }
+
+result : 
+10 			//1 means true, 0 means false
+
+
+---
+
+#include <iostream>
+
+using namespace std;
+int main () {
+	int x = 15;
+	cout << (x==123);		//we use parenthesis to check if it's true or false
+	return 0;
+}
