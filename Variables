@@ -29,10 +29,14 @@ size : 1 byte
 Declaring(creating) Variables
 Syntax : type variableName = value;
 
+int myAge = 29;
+float myGpa = 3.3f;		//'f' at the end of the value.
+double myWeight = 69.4524;	//no need to put 'f'
+char grade = 'A';		//a single quotation is surrounded.
+bool liveWithParents = true;
+
 ---
 //Declaring without assigning value is possible.
-
-
 #include <iostream>
 
 using namespace std;
