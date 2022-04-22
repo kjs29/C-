@@ -1,0 +1,28 @@
+//Syntax for while is as follows
+
+while (condition) {
+	
+	codeblock to be executed if condition is true
+}
+
+
+#include <iostream>
+
+int i = 0;
+while (i<5) {
+	cout << i;
+	i++;
+}
+
+---example
+
+#include <iostream>
+using namespace std;
+
+int main () {
+	int i = 0;
+	while (i<5) {
+		cout << i;
+		i++;
+	}
+}
