@@ -1,0 +1,22 @@
+//Syntax of Do...while.
+
+do {
+codeblock to be executed at least once, 
+and then continues to be executed if condition 1 is true
+} while (condition 1);
+
+
+---example
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	int a = 0;
+	do {
+		cout <<"Hello world!"<<a<<"\n";
+		a++;
+	}while (a<5);
+	
+	return 0;
+}
