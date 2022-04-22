@@ -1,0 +1,15 @@
+//struct can hold different data types unlike arrays.
+#include <iostream>
+
+int main () {
+	struct {
+		int hello;
+		std::string hell;
+		
+	}structName;
+	structName.hello = 5;
+	structName.hell = "hello World!";
+	std::cout<<structName.hell;
+	
+	return 0;
+}
