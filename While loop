@@ -26,3 +26,25 @@ int main () {
 		i++;
 	}
 }
+
+---example
+//use break to get out of the while loop
+
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	
+	
+	int number = 0;
+	while (number <10) {
+		
+		cout << number;
+		number++;
+	if (number==6) {
+		break;
+	}
+	}
+	return 0;
+}
