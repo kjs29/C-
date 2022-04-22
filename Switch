@@ -1,0 +1,16 @@
+Syntax for switch
+
+Switch (expression) {
+  case x:
+    //codeblock to be executed if expression is x
+    break;
+  case y:
+    //codeblock to be executed if expression is not x, and expression is y
+    break;
+  case z:
+    //codeblock to be executed if expression is not x,y, and expression is z
+    break;
+  default:
+    //codeblock to be executed if expression is not x,y,z
+    break;
+}
