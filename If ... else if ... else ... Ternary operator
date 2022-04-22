@@ -1,3 +1,16 @@
+Syntax for if... else if...else
+
+if (condition 1) {
+codeblock to be executed if condition 1 is true
+} else if (condition 2) {
+codeblock to be executed if condition 1 is false , and condition 2 is true
+} else {
+codeblock if condition 1 and condition 2 are false
+}
+
+
+---
+
 #include <iostream>
 
 using namespace std;
@@ -57,7 +70,7 @@ int main () {
 }
 
 ---
-//If .. else can be written as shorthand If else.
+//If .. else can be written as shorthand If else. Ternary Operator.
 
 #include <iostream>
 using namespace std;
