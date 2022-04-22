@@ -1,0 +1,8 @@
+Command Prompt in Windows
+
+
+Compile
+g++ hello.cpp -o hello //A compiler translates the C++ probram into machine language code with the extension .o (hello.o)
+
+Execute
+./hello           //It works on Visual studio code but not on local command prompt.
