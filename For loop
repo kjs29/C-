@@ -1,0 +1,5 @@
+//Syntax for For Loop
+
+for (statement1;statement2;statement3){
+//codeblock to be executed
+}
