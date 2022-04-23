@@ -70,3 +70,27 @@ int main () {
 	return 0;
 	
 }
+
+---example
+//Madlibs game
+#include <iostream>
+
+using namespace std;
+int main () {
+	string color,pluralNoun,celebrity;
+	
+	cout<<"Name a color : ";
+	getline(cin,color);
+	
+	cout<<"Name a pluralNoun : ";
+	getline(cin,pluralNoun);
+	
+	cout<<"Name a celebrity : ";
+	getline(cin,celebrity);
+	
+	cout << "Rosese are " << color << "\n";
+	cout << pluralNoun << " are blue"<< "\n";
+	cout << "I love " << celebrity << "\n";
+	
+	return 0;
+}
