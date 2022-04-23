@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	cout << 5/3;
+	return 0;
+}       
+
+result:
+1             //because we let two integers calculate.
+
+---
+//in order to show the exact decimal answers
+
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	cout << 5/3.0;    //I need to at least put one decimals in one number.
+	return 0;
+}       
+
+result : 
+1.66667
+
+---
+//in order to use pow(),sqrt(),round(),ceil(),floor(),fmax() function we need to include #include <cmath>
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main () {
+	cout << pow(3,5) << "\n";
+  	cout << sqrt(64)<< "\n";
+ 	cout << round(5.4)<< "\n";
+ 	cout << ceil(2.3)<< "\n";
+  	cout<< floor (3.6)<< "\n";
+  	cout << fmax(123131,1123123);
+	return 0;
+}       
