@@ -1,4 +1,4 @@
-Syntax for creating array
+Syntax for creating array(Arrays can contain only the same data type.)
 int arrayName [size] = {element1, element2, element3 };
 
 
