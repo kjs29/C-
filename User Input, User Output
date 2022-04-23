@@ -10,13 +10,13 @@ int main() {
 }
 
 ---
-//simple user output
+//simple user input
 
 #include <iostream>
 
 using namespace std;
 int main () {
-	int age;
+	int age;						//we always store a variable before we get user input.
 	cout << "Enter your age : ";
 	cin >> age; //pronounced as see-in
 	cout << "Your age is " << age;
