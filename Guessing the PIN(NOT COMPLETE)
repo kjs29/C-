@@ -1,0 +1,63 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	int realPin = 1234, firstGuess,secondGuess,thirdGuess,a = 1;
+	while(1<=a) {
+		if (a==1) {
+			cout<<"PIN : ";
+			cin>>firstGuess;
+			if (firstGuess==realPin){
+				cout<<"Correct!";
+				break;
+			} else if (firstGuess!=realPin) {
+				cout<<firstGuess<<"is not correct PIN(2 times left)\n";
+				a++;
+				cout<<a<<"\n";
+			}
+			
+		} else if(a==2) {
+			cout<<"PIN\n";
+			cin>>secondGuess;
+			if (secondGuess==realPin) {
+				cout<<"Correct!";
+				break;
+			} else if (secondGuess!=realPin) {
+				if(secondGuess==firstGuess) {
+					cout<<"You already tried this number previously.";
+					a--;
+					cout<<a<<"\n";
+				} else {
+					cout <<secondGuess<<"is not correct PIN(1 time left)\n";
+					a++;
+					cout<<a<<"\n";
+				}
+			}
+		} else if (a==3) {
+			cout<<"PIN\n";
+			cin>>thirdGuess;
+			if(thirdGuess==realPin) {
+				cout<<"Correct!";
+				break;
+			} else if (thirdGuess!=realPin) {
+				if (thirdGuess==secondGuess||thirdGuess==firstGuess) {
+					cout<<"You already tried this number previously.";
+					a--;
+					cout<<a<<"\n";
+				} else {
+					cout <<thirdGuess<<"is not correct PIN\n";
+					a++;
+					cout<<a<<"\n";
+				}
+			}
+		}	
+	if (a >= 3 ) {
+		cout<< "You tried 3 times, now this is blocked for the next 24hours.";
+	}
+	}
+	
+
+	return 0;
+}
