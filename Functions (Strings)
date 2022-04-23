@@ -1,0 +1,43 @@
+//to get the number of characters in a string we use stringName.length();
+
+---example
+#include <iostream>
+using namespace std;
+int main () {
+    string phrase = "Hello world!"
+    cout << phrase.length();
+    return 0;
+}
+
+---
+//to find the position of certain string, we can use stringName.find("world");
+
+#include <iostream>
+using namespace std;
+int main () {
+    string phrase = "Hello world!";
+    cout << phrase.find("world!");
+    return 0;
+}
+
+result :
+6           //because world starts at a position of 6. 
+---
+//we can also use substr function
+//in the parenthesis there are two paremeters. First number represents position, and the second number represents the length of a string.
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	
+	
+	string phrase = "Hello world!";
+	cout << phrase.substr(6,3);
+	return 0;
+}
+
+result :
+wor
+
+---
