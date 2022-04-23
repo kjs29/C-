@@ -1,0 +1,104 @@
+//declare functions
+
+
+---example
+#include <iostream>
+using namespace std;
+
+void sayHi() {
+	cout << "Hello User";
+}
+
+int main () {
+	
+	
+	
+	sayHi();
+	return 0;
+}
+
+---example
+//assigning one parameter
+#include <iostream>
+
+using namespace std;
+
+void sayHi(string name) {
+	
+	std::cout<< "Hello " << name;
+}
+
+int main () {
+	
+	sayHi("Gwen");
+	return 0;
+}
+
+---
+//assigning more than one parameter
+#include <iostream>
+
+using namespace std;
+
+void sayHi(string name, int age) {
+	
+	std::cout<< "Hello " << name << age << "\n";
+}
+
+int main () {
+	
+	sayHi("Gwen", 25);
+	sayHi("Mark",22);
+	sayHi("Steve",44);
+	return 0;
+}
+
+---example
+//usage of returns;
+#include <iostream>
+
+using namespace std;
+
+
+//creating a function called 'cube()'. And there is a double parameter called 'num'.
+double cube(double num) {
+	
+	double result = num* num * num;
+	
+	
+  //we can return the value of 'result' in a cube() function.
+	return result;
+}
+int main () {
+	
+	cout<<cube(5.4);
+	
+}
+
+---example
+//using another function in main() 
+#include <iostream>
+
+using namespace std;
+
+int getMax(int a, int b){
+	if(a>b) {
+		return a;
+	} else {
+		return b;
+	}
+	
+}
+
+int main () {
+	int firstNum;
+	int secondNum;
+	cout<< "write your first number and the second number, and we will figure out which is bigger.\n";
+	cin>> firstNum;
+	cin>> secondNum;
+	
+	cout<< getMax(firstNum,secondNum);
+	
+	
+	return 0;
+}
