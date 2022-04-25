@@ -37,7 +37,7 @@ class Book {
 		string author;
 		int pages;
   
-    //we can define the elements here now
+    //we can define the objects here. This is Constructor.
 		Book(string aTitle, string aAuthor, int aPages) {
 			title = aTitle;
 			author = aAuthor;
