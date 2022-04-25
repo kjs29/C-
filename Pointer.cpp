@@ -54,4 +54,24 @@ int main () {
 	return 0;
 }
 
+---
+//dereferencing a pointer(Getting the value)
+#include  <iostream>
+using namespace std;
 
+int main() {
+	
+	int age = 29;
+	int *pAge = &age;
+	
+	//dereferencing a pointer(Getting a value)
+	cout << *pAge << "\n";
+	
+	//show the actual address of the pointer(Getting the address)
+	cout << pAge << "\n" << &age;
+	
+	//dereferencing a pointer again(Getting the value)
+	cout << *&age;
+	return 0;
+	
+}
