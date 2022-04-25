@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+//we generally name a capital letter for the name of the class
+//we are telling C++ what a 'Book' is. It is the template of a datatype. or a blueprint.
+class Book {
+	public:
+		string title;
+		string author;
+		int pages;
+};
+
+int main () {
+	
+	
+	//Object is an actual book.
+	Book book1;
+	book1.title = "Harry Potter";
+	book1.pages = 512;
+	book1.author = "JK Rowling";
+	cout << book1.title;
+	
+	return 0;
+}
+
+
+---example
+//use constructors to create multiple objects easily
+#include <iostream>
+using namespace std;
+
+//we generally name a capital letter for the name of the class
+//we are telling C++ what a 'Book' is. It is the template of a datatype. or a blueprint.
+class Book {
+	public:
+		string title;
+		string author;
+		int pages;
+  
+    //we can define the elements here now
+		Book(string aTitle, string aAuthor, int aPages) {
+			title = aTitle;
+			author = aAuthor;
+			pages = aPages;
+		}
+};
+
+int main () {
+	
+	
+	//Object is an actual book.
+	Book book1("7 habits of highly effective people","Stephen Covey",500);
+
+	cout << book1.title;
+	
+	return 0;
+}
