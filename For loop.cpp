@@ -44,3 +44,24 @@ int main () {
 	
 	return 0;
 }
+
+
+---example
+//we want to create a function called power() to show the power numbers
+#include <iostream>
+
+using namespace std;
+
+
+int power(int a,int b){
+	int result = 1;
+	for (int i = 0; i<b; i++){
+		result *= a;	//result = result * a;
+	}
+	return result;
+}
+int main () {
+	power(2,5);
+	cout<<power(2,5);
+	return 0;
+}
