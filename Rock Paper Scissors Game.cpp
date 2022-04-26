@@ -13,11 +13,12 @@ Spock > rock
 
 */
 #include <iostream>
-#include <stdlib.h>
+#include <cstdlib>
+#include <time.h>
 
 int main () {
 srand(time(NULL));
-int computer = rand() % 3+ 1;
+int computer = std::rand() % 3+ 1;
 int user = 0;
 
 std::cout << "====================\n";
