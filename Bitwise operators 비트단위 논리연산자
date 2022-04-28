@@ -1,4 +1,4 @@
-AND(&),OR(|),NOT(~),XOR(^)
+AND(&),OR(|),NOT(~),XOR(^),SHL(<<),SHR(>>)
 
 
 87 & 53 =
