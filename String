@@ -1,3 +1,6 @@
+//we need to include <string> in header.
+#include <string>
+
 //string is used to store strings surrounded by double quotes.
 #include <iostream>
 
