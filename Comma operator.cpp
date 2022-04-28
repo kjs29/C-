@@ -9,3 +9,7 @@ int main () {
 	a = (b=2,b+3);
 	cout<<a<<"\n"<<b;
 }
+
+result : 
+5
+2
