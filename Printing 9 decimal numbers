@@ -1,0 +1,18 @@
+/*
+when you have a number 3.141592653
+and you want to print the exact value as above.
+but normally double only prints 6 digits.
+how will you print it with 9decimal number places?
+*/
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main () {
+  double f = 3.141592653;
+  cout<<fixed;
+  cout<<setprecision(9)<<f;
+  return 0;
+}
+
+result : 
+3.141592653
