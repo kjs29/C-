@@ -110,9 +110,10 @@ int main () {
 	int age = 5;
 	int *p_age = &age;
 	
-	cout<<"What the pointer(p_age) is assigned to : "<<p_age<<"\n"; 			//p_age = &age so it indicates the address of the 'age'.
+	cout<<"What the pointer(p_age) is assigned to(In this case, the address of the variable 'age') : "<<p_age<<"\n";	//p_age = &age so it indicates the address of the 'age'.
 	cout<<"What is included in the pointer p_age(the real value) : "<<*p_age<<"\n";				//value of the pointer
 	cout<<"value of age(What the variable 'age' is assigned to) : "<<age<<"\n";
-	cout<<"address of age (&age) : "<<&age;
+	cout<<"address of age (&age) : "<<&age<<"\n";
+	cout<<"address of the pointer variable(p_age) : &p_age : "<<&p_age;
 	return 0;
 }
