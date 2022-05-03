@@ -10,9 +10,9 @@ int main () {
 	
 	//accessing memory address for 'age' variable. '&age' is a pointer
 	cout << &age<<"\n";
-  //accessing memory address for 'gpa' variable. '&gpa' is a pointer
+  	//accessing memory address for 'gpa' variable. '&gpa' is a pointer
 	cout << &gpa<<"\n";
-  //accessing memory address for 'name' variable. '&name' is a pointer
+  	//accessing memory address for 'name' variable. '&name' is a pointer
 	cout << &name<<"\n";
 	
 	return 0;
@@ -27,7 +27,7 @@ using namespace std;
 int main () {
 	int age = 29;
 	
-	//we are creating pointer variable for the memory address of age variable
+	//we are creating pointer variable for the memory address of age variable(There is always an asterisk when we declare a pointer)
 	int *pAge = &age;
 	
 	double gpa = 3.1;
@@ -43,9 +43,9 @@ int main () {
 	
 	//accessing memory address for 'age' variable.
 	cout << &age<<"\n";
-  //accessing memory address for 'gpa' variable.
+ 	//accessing memory address for 'gpa' variable.
 	cout << &gpa<<"\n";
-  //accessing memory address for 'name' variable.
+  	//accessing memory address for 'name' variable.
 	cout << &name<<"\n";
 	
 	//if we want to access the address of the variable
@@ -74,4 +74,30 @@ int main() {
 	cout << *&age;
 	return 0;
 	
+}
+
+
+---example
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main () {
+	
+	//declare an integer type data called age
+	int age = 5;
+	
+	//address of the age (&)
+	cout<<"address of the age : "<<&age<<"\n";
+	
+	//declare an int type pointer
+	//for the address of the age (*)
+	int* p_age = &age;
+	
+	//print out pointer which is &age
+	cout<<"p_age : "<<p_age<<"\n";
+	
+	//print out the address of the pointer
+	cout<<"address of the p_age : "<<&p_age;
+	
+	return 0;
 }
