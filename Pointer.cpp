@@ -117,3 +117,66 @@ int main () {
 	cout<<"address of the pointer variable(p_age) : &p_age : "<<&p_age;
 	return 0;
 }
+
+---example
+// There are different types of pointers
+//int pointer, float pointers, char pointers
+//they exist to indicate (or point) different variables
+
+#include <iostream>
+
+using namespace std;
+int main () {
+	
+	int a=5;
+	
+	printf("Integer size : %d\n",sizeof(int)); //size of integer
+	printf("Float size : %d\n",sizeof(float)); //size of float
+	printf("Char size : %d\n",sizeof(char));  //size of character
+	printf("Integer pointer size : %d\n",sizeof(int*));	//size of integer pointer
+	printf("Float pointer size : %d\n",sizeof(float*));	//size of float pointer
+	printf("Character pointer size : %d\n",sizeof(char*));	//size of character pointer
+
+	//let's make a pointer that indicates the address of the variable 'a'
+	int* ptr = &a;			//&a indicates the address of 'a'
+	
+	//let's find out the address of variable 'a'
+	printf("Address of a is %x\n", &a);
+	
+	//let's find out what this ptr indicates
+	printf("What 'ptr' indicates is %x\n",ptr);
+	
+	//let's find out the 'value' of what 'ptr' indicates
+	printf("Value of what 'ptr' indicates is %d\n", *ptr); 		//%d because it is an integer
+	
+	//the usage of asterisk.
+	//1.to use pointer.
+	//2. later..
+	
+	 
+	return 0;
+}
+---example of swap
+// Swap
+
+#include <iostream>
+using namespace std;
+
+int swap (int* a, int* b){
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+	return 0;
+}
+int main () {
+	
+	int a=5;
+	int b = 10;
+	
+	
+	swap(&a,&b);
+	cout<<"a = "<<a<<"\n";
+	cout<<"b = "<<b<<"\n";
+	return 0;
+}
