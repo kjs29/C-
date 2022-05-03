@@ -180,6 +180,25 @@ int main () {
 	cout<<"b = "<<b<<"\n";
 	return 0;
 }
+---example of swap
+#include <iostream>
+using namespace std;
+void swap (int& a, int& b) {
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+}
+
+int main () {
+	int first = 10;
+	int second = 20;
+	cout<<"Before swap a = "<<first<<"a = "<<second<<"\n";
+	
+	swap (first, second);
+	cout<<"After swap a = "<<first<<"a = "<<second;
+	return 0;
+}
 
 
 ---
