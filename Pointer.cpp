@@ -180,3 +180,32 @@ int main () {
 	cout<<"b = "<<b<<"\n";
 	return 0;
 }
+
+
+---
+// Character pointer
+
+#include <iostream>
+using namespace std;
+int main () {
+	
+	//create an array called 'arr'.
+	char arr[6] = {"Hello"};
+	
+	//Create a pointer variable called ptr that indicates the address of arr[0]
+	char* ptr = &arr[0];
+	
+	//print out the value of what the pointer variable 'ptr' contains
+	printf("%c\n",*ptr);
+	
+	//print out the value of the what the pointer variable 'ptr+1' contains.
+	printf("%c\n",*(ptr+1));
+	
+	
+	printf("%c\n",*(ptr+2));
+	printf("%c\n",*(ptr+3));
+	printf("%c",*(ptr+4));
+	
+	return 0;
+}
+	
