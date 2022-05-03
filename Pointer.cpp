@@ -209,3 +209,26 @@ int main () {
 	return 0;
 }
 	
+---example on why we have to use & in scanf
+//Why do we put ampersand in scanf
+
+#include <iostream>
+using namespace std;
+
+int main () {
+	
+	int s = 5;
+	printf("What is your favourite number ? : ");
+	
+	
+	scanf("%d",s); 	
+	
+	
+	
+	printf("%d",s);		//it will print out the value of s which is 5.
+	return 0 ;
+}
+
+/*
+Therefore we have to use the address of the s (&s) to bring the value of s. 
+*/
