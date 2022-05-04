@@ -1,6 +1,29 @@
 #include <iostream>
 using namespace std;
 int main () {
+	//defining bool variables
+	bool a = 123;
+	bool b = -2;
+	bool aa = 0;
+	bool bb = -0;
+	bool aaa = true;
+	bool bbb = false;
+	
+	//print out the values of the variables
+	cout<<"Value of boolean 123 : "<<a<<"\n";		//123 is true so 1
+	cout<<"Value of boolean -2 : "<<b<<"\n";		//-2 is true so 1
+	cout<<"Value of boolean 0 : "<<aa<<"\n";		//0 is false so 0
+	cout<<"Value of boolean -0 : "<<bb<<"\n";		//-0 is false so 0
+	cout<<"Value of boolean true : "<<aaa<<"\n";	//true is 1 so 1
+	cout<<"Value of boolean false : "<<bbb<<"\n";	//false is 0 so 0
+	//size of boolean
+	cout<<sizeof(bool);
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main () {
 	bool isTrue = true;
 	bool isFalse = false;
 	cout << isTrue;
