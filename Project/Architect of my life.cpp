@@ -27,9 +27,16 @@ int main () {
 		cout<<"You are "<<age<<". You want to be rich.\nYou will have choices.";
 		cout<<"You can choose either doing business or investing. \nWhat is your choice? (b for business/i or invest) : ";
 		cin>>firstChoice;
+		//check if they have the right answer
+		while (firstChoice!='b'&&firstChoice!='B'&&firstChoice!='i'&&firstChoice!='I'){
+			age++;
+			cout<<"\n\nThat is not a valid answer but you just aged.\nYour age : "<<age<<"\n";
+			cout<<"What is your choice? (b for business/i or invest) : ";
+			cin>>firstChoice;
+		}
 		age++;
     
-    //make the screen blank
+   		//make the screen blank
 		system("CLS");
     
 		if(firstChoice == 'b'||firstChoice == 'B'){
